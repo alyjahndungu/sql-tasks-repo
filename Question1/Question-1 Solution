@@ -1,0 +1,2 @@
+
+SELECT courses.*, users.* FROM courses,users WHERE `courses`.`user_id` > `courses`.`course_id` + 1 ORDER BY `courses`.`course_date` DESC
