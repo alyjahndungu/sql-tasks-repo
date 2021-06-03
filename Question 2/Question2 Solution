@@ -1,0 +1,15 @@
+Question 2: Since the tables does not have any form of relationship. First step i would do is to introduce a 3rd Normal Form. 
+
+This is basically to join the tables and come up with a third table that has a relationship.
+
+
+Solution to this looks something like this:
+
+
+SELECT *
+FROM products
+RIGHT JOIN uploads
+ON products.id = uploads.uploadable_id ORDER BY uploads.file_name ASC;
+
+
+
